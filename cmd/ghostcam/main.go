@@ -52,7 +52,7 @@ func app(args []string, ui uiMode) {
 		publicURL  = flags.String("public-url", "", "use this HTTPS base URL instead of starting a Cloudflare quick tunnel")
 		cfBin      = flags.String("cloudflared", "", "path to cloudflared (default: downloaded and kept up to date automatically)")
 		tunnelFlag = flags.String("tunnel", "", "tunnel provider for this run: cloudflare, localhostrun (default: the saved setting)")
-		stun       = flags.String("stun", "stun:stun.cloudflare.com:3478,stun:stun.l.google.com:19302", "comma-separated STUN URLs (empty to disable)")
+		stun       = flags.String("stun", "stun:stun.cloudflare.com:3478", "comma-separated STUN URLs (empty to disable)")
 		turnURL    = flags.String("turn", os.Getenv("GHOSTCAM_TURN_URL"), "TURN URL, e.g. turns:turn.example.org:5349 (env GHOSTCAM_TURN_URL)")
 		turnUser   = flags.String("turn-user", os.Getenv("GHOSTCAM_TURN_USER"), "TURN username (env GHOSTCAM_TURN_USER)")
 		noUPnP     = flags.Bool("no-upnp", false, "do not try to open the UDP port on the router")

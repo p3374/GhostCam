@@ -297,7 +297,7 @@ Docker, only the encrypted relay (and sometimes STUN) works.
 | `-tunnel <provider>` | saved setting | `cloudflare` or `localhostrun` for this run |
 | `-public-url <https-url>` | saved setting | Your own address for this run (see [Internet link](#internet-link-tunnel)) |
 | `-cloudflared <path>` | auto-downloaded and updated | Use this cloudflared binary instead |
-| `-stun <urls>` | Cloudflare + Google | Comma-separated STUN servers; empty disables STUN |
+| `-stun <urls>` | Cloudflare | Comma-separated STUN servers; empty disables STUN |
 | `-turn <url> -turn-user <u>` | none | TURN server; password via `GHOSTCAM_TURN_PASS` |
 | `-headless` | off | No window: QR code and status in the terminal (same as `ghostcam run`) |
 | `-web-dir <dir>` | embedded | Serve `web/` from disk (live editing) |

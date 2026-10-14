@@ -311,7 +311,7 @@ STUN).
 | `-tunnel <fournisseur>` | réglage enregistré | `cloudflare` ou `localhostrun` pour ce lancement |
 | `-public-url <url-https>` | réglage enregistré | Votre propre adresse pour ce lancement (voir [Lien Internet](#lien-internet-tunnel)) |
 | `-cloudflared <chemin>` | téléchargé et mis à jour automatiquement | Utiliser ce binaire cloudflared à la place |
-| `-stun <urls>` | Cloudflare + Google | Serveurs STUN séparés par des virgules ; vide = STUN désactivé |
+| `-stun <urls>` | Cloudflare | Serveurs STUN séparés par des virgules ; vide = STUN désactivé |
 | `-turn <url> -turn-user <u>` | aucun | Serveur TURN ; mot de passe via `GHOSTCAM_TURN_PASS` |
 | `-headless` | désactivé | Pas de fenêtre : QR code et statut dans le terminal (comme `ghostcam run`) |
 | `-web-dir <dossier>` | intégré | Sert `web/` depuis le disque (modification en direct) |
